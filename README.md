@@ -1,7 +1,7 @@
 StrideableNSDate
 ================
 
-#NSDate+Strideable
+NSDate+Strideable
 
 ##Compareable & Equatable
 
