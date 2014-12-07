@@ -12,7 +12,8 @@
 		F78F8ACF1A34A82D00BCE48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78F8ACD1A34A82D00BCE48B /* Main.storyboard */; };
 		F78F8AD11A34A82D00BCE48B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78F8AD01A34A82D00BCE48B /* Images.xcassets */; };
 		F78F8AD41A34A82D00BCE48B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78F8AD21A34A82D00BCE48B /* LaunchScreen.xib */; };
-		F78F8AE01A34A82D00BCE48B /* StrideableNSDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F8ADF1A34A82D00BCE48B /* StrideableNSDateTests.swift */; };
+		F78F8AEA1A34A84300BCE48B /* NSDate+Strideable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F8AE91A34A84300BCE48B /* NSDate+Strideable.swift */; };
+		F78F8AEC1A34A85500BCE48B /* NSDate+StridableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F8AEB1A34A85500BCE48B /* NSDate+StridableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,8 @@
 		F78F8AD31A34A82D00BCE48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F78F8AD91A34A82D00BCE48B /* StrideableNSDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrideableNSDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78F8ADE1A34A82D00BCE48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F78F8ADF1A34A82D00BCE48B /* StrideableNSDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrideableNSDateTests.swift; sourceTree = "<group>"; };
+		F78F8AE91A34A84300BCE48B /* NSDate+Strideable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Strideable.swift"; sourceTree = "<group>"; };
+		F78F8AEB1A34A85500BCE48B /* NSDate+StridableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+StridableTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				F78F8AC91A34A82D00BCE48B /* AppDelegate.swift */,
 				F78F8ACB1A34A82D00BCE48B /* ViewController.swift */,
+				F78F8AE91A34A84300BCE48B /* NSDate+Strideable.swift */,
 				F78F8ACD1A34A82D00BCE48B /* Main.storyboard */,
 				F78F8AD01A34A82D00BCE48B /* Images.xcassets */,
 				F78F8AD21A34A82D00BCE48B /* LaunchScreen.xib */,
@@ -98,7 +101,7 @@
 		F78F8ADC1A34A82D00BCE48B /* StrideableNSDateTests */ = {
 			isa = PBXGroup;
 			children = (
-				F78F8ADF1A34A82D00BCE48B /* StrideableNSDateTests.swift */,
+				F78F8AEB1A34A85500BCE48B /* NSDate+StridableTests.swift */,
 				F78F8ADD1A34A82D00BCE48B /* Supporting Files */,
 			);
 			path = StrideableNSDateTests;
@@ -214,6 +217,7 @@
 			files = (
 				F78F8ACC1A34A82D00BCE48B /* ViewController.swift in Sources */,
 				F78F8ACA1A34A82D00BCE48B /* AppDelegate.swift in Sources */,
+				F78F8AEA1A34A84300BCE48B /* NSDate+Strideable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F78F8AE01A34A82D00BCE48B /* StrideableNSDateTests.swift in Sources */,
+				F78F8AEC1A34A85500BCE48B /* NSDate+StridableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
