@@ -9,53 +9,53 @@
 import Foundation
 
 /**
-NSDate を比較する為の演算子です。
+Comparison operator for NSDate
 
-:param: left  左辺 NSDate
-:param: right 右辺 NSDate
+:param: left NSDate
+:param: right NSDate
 
-:returns: 右辺より左辺が過去であるかどうか
+:returns: left NSDate is earlier than right NSDate
 */
 public func < (left : NSDate, right : NSDate) -> Bool {
     return left.compare(right) == NSComparisonResult.OrderedAscending
 }
 
 /**
-NSDate の等値性を確認する為の演算子です。
+Equal operator for NSDate
 
-:param: left  左辺 NSDate
-:param: right 右辺 NSDate
+:param: left  NSDate
+:param: right NSDate
 
-:returns: 右辺と左辺が同一時刻であるかどうか
+:returns: left NSDate is equal to right NSDate
 */
 public func == (left : NSDate, right : NSDate) -> Bool {
     return left.isEqualToDate(right)
 }
 
 /**
-NSDate を Strideable プロトコルに準拠させる為の実装です。
+Extension of NSDate confirmation to Strideable protocol
 */
 extension NSDate : Strideable {
     
     typealias Stride = NSTimeInterval
     
     /**
-    指定の NSTimeInterval 秒進んだ NSDate を返します。
+    Function that generates NSDate advanced by n seconds from self
     
-    :param: n 何秒進むか
+    :param: n NSTimeInterval(s)
     
-    :returns: 指定秒進んだ NSDate
+    :returns: adbanced NSDate
     */
     public func advancedBy(n: NSTimeInterval) -> Self {
         return self.dynamicType.init(timeInterval: n, sinceDate: self)
     }
     
     /**
-    指定の NSDate がどのくらいの秒数離れているかを NSTimeInterval で返します。
+    Function that generates NSInterval distance to other NSDate from self 
     
-    :param: other 指定の NSDate
+    :param: other NSDate
     
-    :returns: 何秒離れているかを示す NSTimeInterval
+    :returns: NSTimeInterval distance
     */
     public func distanceTo(other: NSDate) -> NSTimeInterval {
         return other.timeIntervalSinceDate(self)
