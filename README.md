@@ -19,7 +19,7 @@ dateFor20010101 < dateFor20010102
 // true : future is larger than past
 dateFor20010102 > dateFor20010101 
 
-// true : same date shold be equal
+// false : other date should be not equal
 dateFor20010101 == dateFor20010102 
 ```
 
