@@ -1,4 +1,4 @@
-StrideableNSDate
+#StrideableNSDate
 
 [![Build Status](https://travis-ci.org/UsrNameu1/StrideableNSDate.svg?branch=master)](https://travis-ci.org/UsrNameu1/StrideableNSDate)
 
