@@ -6,5 +6,5 @@ before_script:
   - brew outdated xctool || brew upgrade xctool
 
 script:
-  - xctool -project StridableNSDate.xcodeproj -scheme StridableNSDate -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -reporter pretty
-  - xcodebuild -project StridableNSDate.xcodeproj -scheme StridableNSDate -destination 'platform=iOS Simulator,name=iPhone 6' test | xcpretty -c && exit ${PIPESTATUS[0]}
+  - xctool -project StrideableNSDate.xcodeproj -scheme StrideableNSDate -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -reporter pretty
+  - xcodebuild -project StrideableNSDate.xcodeproj -scheme StrideableNSDate -destination 'platform=iOS Simulator,name=iPhone 6' test | xcpretty -c && exit ${PIPESTATUS[0]}
